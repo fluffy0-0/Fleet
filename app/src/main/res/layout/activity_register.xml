@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="14dp"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        app:srcCompat="@drawable/logotype_intro" />
+
+    <LinearLayout
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8sp">
+
+        <TextView
+            android:id="@+id/label_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:fontFamily="@font/gotham_medium"
+            android:padding="@dimen/inner_frame_layout_padding"
+            android:text="Name"
+            android:textColor="@color/dark_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/gotham_book"
+            android:imeActionLabel="@string/app_name"
+            android:includeFontPadding="true"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="12sp"
+            android:paddingLeft="12sp"
+            android:paddingRight="12sp"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8sp">
+
+        <TextView
+            android:id="@+id/label_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:fontFamily="@font/gotham_medium"
+            android:padding="@dimen/inner_frame_layout_padding"
+            android:text="Email"
+            android:textColor="@color/dark_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/gotham_book"
+            android:imeActionLabel="@string/app_name"
+            android:includeFontPadding="true"
+            android:inputType="textWebEmailAddress|textEmailAddress"
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="12sp"
+            android:paddingLeft="12sp"
+            android:paddingRight="12sp"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8sp">
+
+        <TextView
+            android:id="@+id/label_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:fontFamily="@font/gotham_medium"
+            android:padding="@dimen/inner_frame_layout_padding"
+            android:text="Username"
+            android:textColor="@color/dark_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/gotham_book"
+            android:imeActionLabel="@string/app_name"
+            android:includeFontPadding="true"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="12sp"
+            android:paddingLeft="12sp"
+            android:paddingRight="12sp"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="8sp">
+
+        <TextView
+            android:id="@+id/label_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:fontFamily="@font/gotham_medium"
+            android:padding="@dimen/inner_frame_layout_padding"
+            android:text="Password"
+            android:textColor="@color/dark_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/gotham_book"
+            android:imeActionLabel="@string/app_name"
+            android:includeFontPadding="true"
+            android:inputType="textPassword"
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="12sp"
+            android:paddingLeft="12sp"
+            android:paddingRight="12sp"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:paddingVertical="8sp">
+
+        <TextView
+            android:id="@+id/label_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:fontFamily="@font/gotham_medium"
+            android:padding="@dimen/inner_frame_layout_padding"
+            android:text="Confirm Password"
+            android:textColor="@color/dark_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/input_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/gotham_book"
+            android:imeActionLabel="@string/app_name"
+            android:includeFontPadding="true"
+            android:inputType="textPassword"
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="12sp"
+            android:paddingLeft="12sp"
+            android:paddingRight="12sp"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/RegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="#00FFFFFF"
+        android:paddingVertical="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/register_btn" />
+</LinearLayout>

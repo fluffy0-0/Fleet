@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:theme="@style/Theme.Transparent"
+    android:background="@drawable/popup_background"
+    android:fadingEdge="horizontal|vertical"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp">
+
+    <TextView
+        android:id="@+id/addFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_medium"
+        android:paddingVertical="16sp"
+        android:text="Add a Friend"
+        android:textAlignment="center"
+        android:textColor="@color/light_blue"
+        android:textSize="28sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_blue"
+        android:paddingHorizontal="16dp" />
+
+    <LinearLayout
+        android:id="@+id/login_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:paddingVertical="8sp">
+
+        <TextView
+            android:id="@+id/label_fragment_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:fontFamily="@font/gotham_medium"
+            android:padding="@dimen/inner_frame_layout_padding"
+            android:text="Username"
+            android:textColor="@color/dark_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:textColorLink="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/search_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24sp"
+            android:background="@drawable/input_border"
+            android:ems="10"
+            android:fontFamily="@font/gotham_book"
+            android:imeActionLabel="@string/app_name"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:paddingHorizontal="4sp"
+            android:paddingVertical="12sp"
+            android:paddingLeft="12sp"
+            android:paddingRight="12sp"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:paddingVertical="10dp">
+
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/light_blue"
+            android:indeterminateTintMode="multiply"
+            android:maxHeight="30dip"
+            android:minHeight="30dip" />
+
+        <TextView
+            android:id="@+id/userPrompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:paddingVertical="4dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/light_blue"
+            android:textSize="14sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/addUserButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|fill_vertical"
+            android:background="@drawable/chatbox_border"
+            android:backgroundTint="@color/light_blue"
+            android:text="Find"
+            android:textColor="@color/light_blue" />
+    </LinearLayout>
+
+</LinearLayout>

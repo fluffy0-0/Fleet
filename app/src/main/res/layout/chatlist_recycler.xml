@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_dark">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/input_border"
+            android:cropToPadding="true"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="7dp"
+            android:scaleType="fitXY"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:srcCompat="@drawable/default_profile_image"
+            app:strokeColor="#FFFFFF"
+            app:strokeWidth="0.5dp"
+            tools:layout_editor_absoluteX="30dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recycler_UserTitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/gotham_book"
+            android:maxLines="1"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="4dp"
+            android:text="Spiderman"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/light_blue"
+            android:textColorHint="@color/light_blue"
+            android:textColorLink="@color/light_blue"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="2dp">
+
+            <TextView
+                android:id="@+id/recycler_lastText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_vertical"
+                android:layout_weight="4"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="end"
+                android:fontFamily="@font/gotham_light"
+                android:maxLines="1"
+                android:paddingHorizontal="4dp"
+                android:text="yaar Jlaal khatam hogya...yaar Jlaal khatam hogya...yaar Jlaal khatam hogya...rrrrrrrrrg"
+                android:textColor="@color/light_blue"
+                android:textColorHighlight="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textColorLink="@color/light_blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/recycler_textTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham_book"
+                android:paddingHorizontal="7dp"
+                android:paddingRight="4dp"
+                android:text="Saturday"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/light_blue"
+                android:textColorHighlight="@color/light_blue"
+                android:textColorHint="@color/light_blue"
+                android:textColorLink="@color/light_blue"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

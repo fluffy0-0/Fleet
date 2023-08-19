@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118616370258",
+    "project_id": "fleet-82df7",
+    "storage_bucket": "fleet-82df7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118616370258:android:00747318d136cfdb5b838b",
+        "android_client_info": {
+          "package_name": "com.roeticvampire.fleet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118616370258-sged0v5a78a04e4e2d2lj6t28m6eagai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr_3gjiJClS70EJtc3PWSjVzKJlakz3KU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118616370258-sged0v5a78a04e4e2d2lj6t28m6eagai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical"
+    tools:context=".chatScreenActivity">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/back_btn" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.2">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/input_border"
+                android:cropToPadding="true"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="4dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                app:srcCompat="@drawable/default_profile_image"
+                app:strokeColor="#FFFFFF"
+                app:strokeWidth="0.5dp"
+                tools:layout_editor_absoluteX="30dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_medium"
+                android:paddingVertical="3dp"
+                android:text="Syed A. Haider"
+                android:textColor="@color/light_blue"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/user_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_book"
+                android:paddingVertical="2dp"
+                android:text="roetron"
+                android:textColor="@color/light_blue"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ChatScreenRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingVertical="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/username_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="5"
+            android:background="@drawable/chatbox_border"
+            android:ems="10"
+            android:fontFamily="@font/gotham_book"
+            android:imeActionLabel="@string/app_name"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:paddingHorizontal="8sp"
+            android:paddingVertical="12sp"
+            android:textColor="@color/light_blue"
+            android:textColorHighlight="@color/dark_blue"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/sendText_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="4dp"
+            app:srcCompat="@drawable/send_btn" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

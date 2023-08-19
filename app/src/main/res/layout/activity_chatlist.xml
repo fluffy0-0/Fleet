@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:orientation="vertical"
+    tools:context=".ChatlistActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.2">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/input_border"
+                    android:cropToPadding="true"
+                    android:paddingHorizontal="4dp"
+                    android:paddingVertical="4dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                    app:srcCompat="@drawable/default_profile_image"
+                    app:strokeColor="#FFFFFF"
+                    app:strokeWidth="0.5dp"
+                    tools:layout_editor_absoluteX="30dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_medium"
+                    android:paddingVertical="3dp"
+                    android:text="Syed A. Haider"
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/user_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:paddingVertical="2dp"
+                    android:text="roetron"
+                    android:textColor="@color/light_blue"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_thin"
+                    android:paddingVertical="1dp"
+                    android:text="yosyedalihaidedr@gmail.com"
+                    android:textColor="@color/light_blue"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/logoicon2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_weight="2"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                app:srcCompat="@drawable/logotype_intro" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatlist_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:rotation="0">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue"
+            android:fontFamily="@font/gotham_thin"
+            android:paddingVertical="4sp"
+            android:text="Made with bugs, by Roet"
+            android:textAlignment="center"
+            android:textColor="@color/light_blue"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="36dp"
+        android:layout_weight="1"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/floating_btn"
+        app:tint="@null"
+        app:useCompatPadding="true" />
+</FrameLayout>
